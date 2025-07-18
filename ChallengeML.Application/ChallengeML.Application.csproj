@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChallengeML.Domain\ChallengeML.Domain.csproj" />
+    <ProjectReference Include="..\ChallengeML.Repository\ChallengeML.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
