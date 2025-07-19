@@ -12,7 +12,36 @@ API REST desarrollada como solución para el challenge técnico de Mercado Libre
 - Dependency Injection
 - Manejo de excepciones custom con Middleware
 
-## 📦 Setup del proyecto
+## 🐳 Docker + bat
+Correr run-docker.bat que automatiza levantar el contenedor. 
+Abrir en el navegador http://localhost:5000 para swagger o pegarle desde postman. 
+
+
+## 🐳 Docker Manual
+
+### Build de la imagen:
+```bash
+docker build -t challengeml-api .
+```
+
+### Correr el contenedor:
+```bash
+docker run -d -p 5000:8080 --name challengeml-api challengeml-api
+```
+
+### Acceso a la API:
+```
+http://localhost:5000
+```
+
+### Probar con Swagger
+Abrí en tu navegador:
+```
+http://localhost:5000
+
+
+
+## 📦 Setup del proyecto 
 
 ### ✅ Requisitos
 - Tener instalado el SDK de [.NET 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0).
