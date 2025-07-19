@@ -11,7 +11,7 @@ namespace ChallengeML.Repository.Repositories
 
         public ProductRepository()
         {
-            _dataFilePath = Path.Combine(AppContext.BaseDirectory, "products.json");
+            _dataFilePath = Path.Combine(AppContext.BaseDirectory, "Data", "products.json");
         }
 
         public async Task<List<Product>> Get(ProductFilters filters)
